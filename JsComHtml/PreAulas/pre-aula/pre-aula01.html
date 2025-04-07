@@ -1,0 +1,63 @@
+<script type="text/javascript">
+	alert("Bem-vindo ao JavaScritpt!");
+	document.write("Esta e uma saida de dados.<br>");
+	console.log("Esta mensagem aparecera no console.");
+</script>
+<script type="text/javascript">
+	let nomepromp = prompt("Digite aqui seu nome");
+	console.log("Seja bem vindo "+ nomepromp + "Esperamos que goste de nosso site veja se seu nome esta escrito corretamente na pagina");
+	document.write("<br>Seja Bem-vindo "+ nomepromp+"<br>");
+</script>
+<script type="text/javascript">
+	alert("Você vera agora uma calcudladora das 4 operacões digite o numero 1 e o 2 para que ele faca as 4 operacões"); 
+	alert("Obs.: Ele faz as 4 automaticamente não há necessidade de escolha.");
+	let num1 = parseFloat(prompt("Digite aqui o primeiro numero"));
+	let num2 = parseFloat(prompt("Digite aqui o segundo numero"));
+	if (isNaN(num1)) {
+		alert("Você não digitou um numero valido");
+	}
+	if (isNaN(num2)) {
+		alert("Você não digitou um numero valido");
+	}
+	console.log(num1 + num2);
+	console.log(num1 - num2);
+	console.log(num1 / num2);
+	console.log(num1 * num2);
+	document.write(num1 + num2);
+	document.write(num1 - num2);
+	document.write(num1 * num2);
+	document.write(num1 / num2);
+</script>
+<script type="text/javascript">
+	let idade = parseInt(prompt("Digite aqui sua idade"));
+	if (isNaN(idade)) {
+		console.log("Você não digitou uma idade valida!");
+	}else {
+		if (idade >= 18){
+			console.log("Você e maior de idade");
+		}else{
+			console.log("Você e menor de idade");
+		}
+	}
+</script>
+<script type="text/javascript">
+	for (let i = 1; i <= 10; i++){
+		console.log(i)
+	}
+</script>
+<script type="text/javascript">
+	function saudacao2(nome) {
+	 return "Olá, " + nome + "!"
+	}
+	console.log(saudacao2("brayan"));
+</script>
+<ul id="lista"></ul>
+<script type="text/javascript">
+	let lista = document.getElementById("lista");
+	let itens = ["oloco","seila","serase","deucerto"];
+	for (let i = 0; i < itens.length; i++){
+		let li = document.createElement("li");
+		li.textContent = itens[i];
+		lista.appendChild(li);
+	}
+</script>
